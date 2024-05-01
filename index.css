@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jersey 15";
+}
+
+body {
+    width: 100vw;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter:drop-shadow(10);
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.tiempo {
+    font-family: 'Roboto';
+    font-weight: 60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: white;
+}
+
+.tiempo p {
+    font-family: 'Roboto';
+}
+
+span {
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    max-height: 10vh;
+    max-width: 290px;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav--item {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 72px;
+}
+
+.nav--item:hover {
+    font-size: 95px;
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 20px;
+    padding: 0 5%;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.participantes {
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+<nav>
+            <ul>
+                <li><a href="">Inscripcion</a></li>
+                <li><a href="">Informacion</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+
+    <div class="participantes">
+        <div class="cortejo1">
+            <div class="equipo">1</div>
+            <div class="equipo">2</div>
+            <div class="equipo">3</div>
+            <div class="equipo">4</div>
+        </div>
+*/
+.participantes .fila {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.equipo {
+    position: relative;
+    height: 30vh;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    filter: grayscale(100%) brightness(50%);
+}
+
+.equipo:hover .fondo{
+    filter: grayscale(0%) brightness(100%);
+    transition: ease-in-out .9s;
+}
+
+.equipo:hover  h3{
+    display: none;
+    transition: ease-in-out .9s;
+}
+
+.equipo h3 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contador {
+        width: 100%;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
+    .tiempo {
+        font-size: 48px;
+    }
+    .vid {
+        width: auto;
+        right: auto;
+        height: 100%;
+    }
+
+    .nav {
+        max-width: 50px;
+    }
+
+    .nav--item {
+        font-size: 52px;
+    }
+
+    .nav--item:hover {
+        font-size: 75px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .participantes .fila {
+        grid-template-columns: 1fr;
+    }
+}
