@@ -1,0 +1,52 @@
+:root {
+    font-size: 16px;
+    padding: 0 5%;
+}
+
+body {
+    background-color: #242424;
+    width: 100vw;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.plata {
+    color: orange;
+    font-size: 3rem;
+}
+
+hr {
+    width: 35%;
+}
+
+p, li {
+    color: #fff;
+}
+
+p {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin: 0 1rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+}
+
+.destacado {
+    color: greenyellow;
+}
+
+.horario {
+    color: tomato;
+}
