@@ -8,6 +8,17 @@ body {
     width: 100vw;
 }
 
+button {
+    background-color: #242424;
+    padding: 15px;
+    border: 2px #fff solid;
+}
+.back-btn {
+    margin: 5px 5px;
+    color: #fff;
+    font-size: 2rem;
+}
+
 h1 {
     color: #fff;
     font-size: 3rem;
@@ -49,4 +60,22 @@ ul {
 
 .horario {
     color: tomato;
+}
+
+iframe {
+    width: 80%;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contacto img {
+    width: 40px;
+}
+
+.contacto p {
+    margin: 0;
 }
