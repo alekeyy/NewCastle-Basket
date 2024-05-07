@@ -1,18 +1,21 @@
 :root {
     font-size: 16px;
-    padding: 0 5%;
+    padding: 0;
 }
 
 body {
     background-color: #242424;
     width: 100vw;
+    padding: 0 5%;
 }
 
 button {
     background-color: #242424;
     padding: 15px;
     border: 2px #fff solid;
+    margin-top: 1rem;
 }
+
 .back-btn {
     margin: 5px 5px;
     color: #fff;
@@ -23,6 +26,7 @@ h1 {
     color: #fff;
     font-size: 3rem;
     margin-bottom: 2rem;
+    padding: 0;
 }
 
 h3 {
@@ -66,6 +70,13 @@ iframe {
     width: 80%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contacto {
     display: flex;
     align-items: center;
@@ -73,9 +84,47 @@ iframe {
 }
 
 .contacto img {
-    width: 40px;
+    width: 75px;
 }
 
 .contacto p {
     margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .back-btn {
+        font-size: 3rem;
+    }
+
+    button {
+        display: block;
+    }
+
+    h1 {
+        font-size: 7rem;
+        font-weight: 300;
+    }
+
+    h3, .plata {
+        display: inline-block;
+        width: 40%;
+        font-size: 5rem;
+    }
+
+    p, .destacado, .horario, ul {
+        font-size: 3rem;
+    }
+
+    iframe {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .contacto img {
+        width: 90px;
+    }
 }
