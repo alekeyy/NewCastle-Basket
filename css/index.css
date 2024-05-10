@@ -39,7 +39,7 @@ body {
 
 .tiempo {
     font-family: 'Roboto';
-    font-weight: 60;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,6 +135,33 @@ h1 {
     filter: grayscale(100%) brightness(50%);
 }
 
+.detalle {
+    position: absolute;
+    top: 10px;
+    padding: 1%;
+    padding-right: 7%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.detalle.campeon {
+    
+    background-color: violet;
+}
+
+.detalle.local {
+    background-color: beige;
+}
+
+#disponibles {
+    font-size: 1.5em;
+}
+
+.disponibles {
+    font-size: 1.2em;
+    color: tomato;
+}
+
 .equipo:hover .fondo{
     filter: grayscale(0%) brightness(100%);
     transition: ease-in-out .9s;
@@ -206,5 +233,9 @@ h1 {
 
     .participantes .fila {
         grid-template-columns: 1fr;
+    }
+
+    .detalle {
+        font-size: 1.5em;
     }
 }

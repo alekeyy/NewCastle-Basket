@@ -27,3 +27,8 @@ let x = setInterval(function(){
     }
 
 }, 1000)
+
+// libres
+let cuposOcupados = 3;
+const cuposLibresElem = document.getElementById("disponibles");
+cuposLibresElem.innerHTML = `<h3>Quedan <span class="disponibles">${32 - cuposOcupados}</span> lugares disponibles</h3>`;
